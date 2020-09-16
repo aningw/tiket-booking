@@ -127,6 +127,16 @@ end
 
 Then(/^transaction created$/)do
   expect(@browser).to have_order_id
+  sleep 2
 end
 
+And(/^user logout$/)do
+  @browser = HomePage.new
+  @browser.account_icon.click
+  @browser.logout.click
+  expect(@browser).to have_confirmation_logout
+  @browser.logout_yes
+  sleep 5
+  expect(@browser).to have_login_button
+end
 

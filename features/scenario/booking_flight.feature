@@ -7,8 +7,8 @@ Feature: flight transaction
     And user is on homepage
     When user click pesawat category
     And user click pulang-pergi radio button
-    And user input dari coloumn
-    And user input ke coloumn
+    And user input dari column
+    And user input ke column
     And user click cari pernerbangan
     And user click filter transit with "1" transit
     And user click pilih on one of flight
@@ -18,4 +18,5 @@ Feature: flight transaction
     And user choose payment method
     And user click lanjutkan
     Then transaction created
+    And user logout
    

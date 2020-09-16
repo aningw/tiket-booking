@@ -17,6 +17,12 @@ class HomePage < SitePrism::Page
   element   :depature_date, :xpath,"(//*[@class='CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2'])[1]"
   element   :return_date, :xpath,"(//*[@class='CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2'])[2]"
   element   :selesai_button, :xpath,"//*[text()='SELESAI']"
+  element   :account_icon, :xpath,"(//*[@class='account-label'])[1]"
+  element   :logout, :xpath,"//*[text()='Keluar']"
+  element   :confirmation_logout, '.modal-content.header-modal.confirmation-logout'
+  element   :logout_yes, 'logout-yes'
+
+
 
 
 end
