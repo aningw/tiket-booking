@@ -9,8 +9,7 @@ class TrainPage < SitePrism::Page
   element   :depature_date,       :xpath,"(//*[@class='CalendarDay CalendarDay_1 CalendarDay__default CalendarDay__default_2'])[1]"
   element   :penumpang_pop_up,    '.passenger-action-box'
   element   :increase_btn_adult,  :xpath,"(//*[@class='tix tix-plus icon'])[1]"
-  element   :increase_btn_infannt,:xpath,"(//*[@class='tix tix-plus icon'])[2]"
+  element   :increase_btn_infant, :xpath,"(//*[@class='tix tix-plus icon'])[2]"
   element   :selesai_button,      :xpath,"//*[text()='SELESAI']"
   element   :search_train_button, :xpath,"//*[text()='Cari Kereta Api']"
-
 end

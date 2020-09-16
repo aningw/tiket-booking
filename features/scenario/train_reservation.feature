@@ -8,11 +8,7 @@ Feature: Train reservation
     And user input depature city
     And user input destination city
     And user input depature date
-    And user input "JUMLAH_DEWASA" adult "JUMLAH_BAYI" infant
+    And user input "2" adult "1" infant
     And user click search
     And user use filter eksekutif
     And user choose one of train schedule
-    
-
-
-    
